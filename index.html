@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Order Form</h2>
+        <form id="orderForm">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <fieldset>
+            <legend>Order Type:</legend>
+            <input
+              type="checkbox"
+              id="shawarma"
+              name="orderType"
+              value="Shawarma"
+            />
+            <label for="shawarma">Shawarma</label>
+            <input
+              type="checkbox"
+              id="zinger"
+              name="orderType"
+              value="Zinger"
+            />
+            <label for="zinger">Zinger</label>
+            <input
+              type="checkbox"
+              id="burger"
+              name="orderType"
+              value="Burger"
+            />
+            <label for="burger">Burger</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order Option:</legend>
+            <input
+              type="radio"
+              id="combo"
+              name="orderOption"
+              value="Combo"
+              required
+            />
+            <label for="combo">Combo</label>
+            <input
+              type="radio"
+              id="sandwich"
+              name="orderOption"
+              value="Sandwich"
+              required
+            />
+            <label for="sandwich">Sandwich</label>
+          </fieldset>
+
+          <label for="image">Upload Image:</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+
+          <button type="submit">Submit Order</button>
+        </form>
+      </section>
+
+      <section id="customerCards">
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Restaurant Ordering System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
